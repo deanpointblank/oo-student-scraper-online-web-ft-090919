@@ -20,6 +20,8 @@ class Scraper
   def self.scrape_profile_page(profile_url)
     page = Nokogiri::HTML(open(profile_url))
     profile = {}
+    profile[:profile_quote] = page.css("div.profile-quote").text
+    profile[:bio] = page.css("div.description-holder p").text
       page.css("div.social-icon-container a").each do |social|
         text = social.attribute("href").text
         case text
@@ -34,8 +36,6 @@ class Scraper
         end
         binding.pry
       end
-    profile[:profile_quote] = page.css("div.profile-quote").text
-    profile[:bio] = page.css("div.description-holder p").text
     profile
   end
 
