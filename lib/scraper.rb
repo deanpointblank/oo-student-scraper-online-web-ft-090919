@@ -33,7 +33,6 @@ class Scraper
         else
           profile[:blog] = text
         end
-        # binding.pry
       end
     profile
   end
