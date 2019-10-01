@@ -9,8 +9,8 @@ class Scraper
     student_index = page.css("div.student-card")
     student_name = student_index.css("h4.student-name").text
     students = []
-    student_index.collect do |student|
-       students[student_name] = {
+    student_index.each do |student|
+       students << student_name.to_sym = {
         :name => student_index.css("h4.student-name").text,
         :location => student_index.css("p.student-location").text,
         :profile_url => student_index.css("a").attribute("href").text
