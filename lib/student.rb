@@ -17,7 +17,7 @@ class Student
     students_array.each do |student|
       student.each do |key, value|
         binding.pry
-        self.send("#{key}", value)
+        @"#{key}"= value
       end
     end
     
