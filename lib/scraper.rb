@@ -29,7 +29,7 @@ end
 # location - student_index.css("p.student-location").text
 # profile_url - student_index.css("a").attribute("href").text
 
-# twitter = page.css("div.social-icon-container").text body > div.main-wrapper.profile > div.vitals-container > div.social-icon-container > a:nth-child(1) > img
+# twitter = page.css("div.social-icon-container a")[0].attribute("href").text
 # linkedin
 # github
 # blog
