@@ -16,7 +16,6 @@ class Student
   def self.create_from_collection(students_array)
     students_array.each do |student|
       student.each do |key, value|
-        binding.pry
         @"#{key}"= value
       end
     end
