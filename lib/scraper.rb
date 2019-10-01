@@ -9,7 +9,7 @@ class Scraper
     student_index = page.css("div.student-card")
     binding.pry
     student_index.collect do |student|
-      student.
+      student.text
   end
 
   def self.scrape_profile_page(profile_url)
