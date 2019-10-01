@@ -31,8 +31,6 @@ class Scraper
             profile[:linkedin] = text
           when text.include?("github")
             profile[:github] = text
-          else
-            profile[:blog] = text
         end
         binding.pry
       end
