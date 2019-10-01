@@ -30,8 +30,8 @@ end
 # profile_url - student_index.css("a").attribute("href").text
 
 # twitter = page.css("div.social-icon-container a")[0].attribute("href").text
-# linkedin = 
-# github
+# linkedin = page.css("div.social-icon-container a")[1].attribute("href").text
+# github =
 # blog
 # profile_quote
 # bio
