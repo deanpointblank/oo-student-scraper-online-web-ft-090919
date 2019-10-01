@@ -25,14 +25,14 @@ class Scraper
       page.css("div.social-icon-container a").each do |social|
         text = social.attribute("href").text
         case text
-          when text.include?("twitter")
-            profile[:twitter] = text
-          when text.include?("linkedin")
-            profile[:linkedin] = text
-          when text.include?("github")
-            profile[:github] = text
-          else
-            profile[:blog] = text
+        when text.include?("twitter")
+          profile[:twitter] = text
+        when text.include?("linkedin")
+          profile[:linkedin] = text
+        when text.include?("github")
+          profile[:github] = text
+        else
+          profile[:blog] = text
         end
         # binding.pry
       end
