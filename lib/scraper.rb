@@ -34,4 +34,4 @@ end
 # github = page.css("div.social-icon-container a")[2].attribute("href").text
 # blog =
 # profile_quote = page.css("div.profile-quote").text.gsub('"', "")
-# bio = 
+# bio = body > div.main-wrapper.profile > div.details-container > div.bio-block.details-block > div > div.description-holder > p
