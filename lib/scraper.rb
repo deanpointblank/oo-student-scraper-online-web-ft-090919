@@ -23,6 +23,8 @@ class Scraper
       page.css("div.social-icon-container a").each do |social|
         text = social.attribute("href").text
         binding.pry
+        case text
+        when text.include?()
         # profile[:twitter] = page.css("div.social-icon-container a")[0].attribute("href").text
         # profile[:linkedin] = page.css("div.social-icon-container a")[1].attribute("href").text
         # profile[:github] = page.css("div.social-icon-container a")[2].attribute("href").text
