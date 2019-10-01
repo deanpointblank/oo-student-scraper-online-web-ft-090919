@@ -23,3 +23,4 @@ end
 # location - student_index.css("p.student-location")[0].text
 # profile_url 
 
+#ryan-johnson-card > a
