@@ -36,9 +36,9 @@ end
 # location - student_index.css("p.student-location").text
 # profile_url - student_index.css("a").attribute("href").text
 
-# twitter => page.css("div.social-icon-container a")[0].attribute("href").text
-# linkedin => page.css("div.social-icon-container a")[1].attribute("href").text
-# github => page.css("div.social-icon-container a")[2].attribute("href").text
-# blog =
-# profile_quote => page.css("div.profile-quote").text.gsub('"', "")
-# bio => page.css("div.description-holder p").text
+# :twitter => page.css("div.social-icon-container a")[0].attribute("href").text,
+# :linkedin => page.css("div.social-icon-container a")[1].attribute("href").text,
+# :github => page.css("div.social-icon-container a")[2].attribute("href").text,
+# :blog => page.css("div.social-icon-container a")[3].attribute("href").text,
+# :profile_quote => page.css("div.profile-quote").text,
+# :bio => page.css("div.description-holder p").text
