@@ -7,7 +7,7 @@ class Student
   def initialize(student_hash = nil)
     if student_hash
       student_hash.each do |key, value|
-        send.self("#{key}=", value)
+        self.send("#{key}=", value)
       end
     end
   end
