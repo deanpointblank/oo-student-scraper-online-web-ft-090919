@@ -4,10 +4,11 @@ class Student
 
   @@all = []
 
-  def initialize(student_hash)
-    student_hash.each do |key, value|
-      send.self("#{key}=", value)
-    end
+  def initialize(student_hash = nil)
+    if student_hash
+      student_hash.each do |key, value|
+        send.self("#{key}=", value)
+      end
   end
 
   def self.create_from_collection(students_array)
