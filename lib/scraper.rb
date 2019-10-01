@@ -18,6 +18,8 @@ class Scraper
   end
 
   def self.scrape_profile_page(profile_url)
+    page = Nokogiri::HTML(open(profile_url))
+    
     
   end
 
@@ -27,4 +29,9 @@ end
 # location - student_index.css("p.student-location").text
 # profile_url - student_index.css("a").attribute("href").text
 
-#ryan-johnson-card > a
+# twitter
+# linkedin
+# github
+# blog
+# profile_quote
+# bio
