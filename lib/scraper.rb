@@ -24,19 +24,15 @@ class Scraper
         text = social.attribute("href").text
         binding.pry
         case text
-        when text.include?("twitter")
-          profile[:twitter] = text
-        when text.include?("linkedin")
-          profile[:linkedin] = text
-        when text.include?("github")
-          profile[:github] = text
-        else
-          profile[:blog] = text
-        # profile[:twitter] = page.css("div.social-icon-container a")[0].attribute("href").text
-        # profile[:linkedin] = page.css("div.social-icon-container a")[1].attribute("href").text
-        # profile[:github] = page.css("div.social-icon-container a")[2].attribute("href").text
-        # profile[:blog] = page.css("div.social-icon-container a")[3].attribute("href").text
-        # binding.pry
+          when text.include?("twitter")
+            profile[:twitter] = text
+          when text.include?("linkedin")
+            profile[:linkedin] = text
+          when text.include?("github")
+            profile[:github] = text
+          else
+            profile[:blog] = text
+        end
       end
     profile[:profile_quote] = page.css("div.profile-quote").text
     profile[:bio] = page.css("div.description-holder p").text
