@@ -29,7 +29,7 @@ end
 # location - student_index.css("p.student-location").text
 # profile_url - student_index.css("a").attribute("href").text
 
-# twitter
+# twitter 
 # linkedin
 # github
 # blog
