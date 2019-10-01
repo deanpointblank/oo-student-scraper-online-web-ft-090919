@@ -16,6 +16,6 @@ class Scraper
 
 end
 
-name
-location
-profile_url 
+# name
+# location
+# profile_url 
