@@ -22,7 +22,6 @@ class Scraper
     profile = {}
       page.css("div.social-icon-container a").each do |social|
         text = social.attribute("href").text
-        binding.pry
         case text
           when text.include?("twitter")
             profile[:twitter] = text
