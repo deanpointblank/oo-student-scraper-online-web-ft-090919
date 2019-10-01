@@ -33,5 +33,5 @@ end
 # linkedin = page.css("div.social-icon-container a")[1].attribute("href").text
 # github = page.css("div.social-icon-container a")[2].attribute("href").text
 # blog =
-# profile_quote =
+# profile_quote = body > div.main-wrapper.profile > div.vitals-container > div.vitals-text-container > div
 # bio = 
