@@ -23,17 +23,18 @@ class Scraper
     profile[:profile_quote] = page.css("div.profile-quote").text
     profile[:bio] = page.css("div.description-holder p").text
       page.css("div.social-icon-container a").each do |social|
-        case social.attribute("href").text
-          when social.attribute("href").text.include?("twitter")
-            profile[:twitter] = social.attribute("href").text
-          when social.attribute("href").text.include?("linkedin")
-            profile[:linkedin] = social.attribute("href").text
-          when social.attribute("href").text.include?("github")
-            profile[:github] = social.attribute("href").text
+        text = social.attribute("href").text
+        case text
+          when text.include?("twitter")
+            profile[:twitter] = text
+          when text.include?("linkedin")
+            profile[:linkedin] = text
+          when text.include?("github")
+            profile[:github] = text
           else
-            profile[:blog] = social.attribute("href").text
+            profile[:blog] = text
         end
-        #binding.pry
+        binding.pry
       end
     profile
   end
