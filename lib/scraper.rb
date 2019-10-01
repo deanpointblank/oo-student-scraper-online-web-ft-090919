@@ -19,7 +19,7 @@ class Scraper
 
 end
 
-# name
+# name - 
 # location
 # profile_url 
 
