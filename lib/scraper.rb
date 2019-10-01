@@ -19,7 +19,7 @@ class Scraper
 
 end
 
-# name - 
-# location
+# name - student_index.css("h4.student-name")[0].text
+# location - 
 # profile_url 
 
