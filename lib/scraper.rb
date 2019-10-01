@@ -31,7 +31,7 @@ end
 
 # twitter = page.css("div.social-icon-container a")[0].attribute("href").text
 # linkedin = page.css("div.social-icon-container a")[1].attribute("href").text
-# github =
-# blog
+# github = page.css("div.social-icon-container a")[2].attribute("href").text
+# blog =
 # profile_quote
 # bio
