@@ -12,10 +12,10 @@ class Scraper
     student_index.each do |student|
        students << student = {
         :name => student_index.css("h4.student-name").text,
+        binding.pry
         :location => student_index.css("p.student-location").text,
         :profile_url => student_index.css("a").attribute("href").text
       }
-      binding.pry
     end
     students
     #       binding.pry
